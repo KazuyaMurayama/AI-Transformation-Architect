@@ -1,64 +1,101 @@
-# FILE_INDEX.md — AI-Transformation-Architect
+# FILE_INDEX — AI-Transformation-Architect
 
-> **新セッション開始時に必ずこのファイルを読む。**
-> ファイル追加・削除・移動時は必ずこのファイルを更新すること。
-> 最終更新: 2026-04-30
+> ⚠️ このファイルは自動生成です。手動編集は次回更新で上書きされます。
 
-## 概要
-AI変革アーキテクトのQ&Aドキュメント生成・比較システム。PatternA/B、PersonaBの複数パターンのQ&AをWordファイルとして出力する。
-
-**スタック:** JavaScript, Node.js
-
----
-
-## 📋 最初に読むべきファイル
-
-| 優先度 | ファイル | 内容 |
-|---|---|---|
-| ★★★ | `ai_architect_qa_instructions.md` | Q&A作成指示・ガイドライン |
-| ★★★ | `create_qa_document.js` | Q&Aドキュメント生成（PatternA） |
-| ★★ | `qa_data.js` | Q&Aデータ（PatternA） |
-| ★★ | `qa_comparison.js` | パターン比較スクリプト |
+| 項目 | 値 |
+|---|---|
+| リポジトリ | KazuyaMurayama/AI-Transformation-Architect |
+| ブランチ | main |
+| 総ファイル数 | 21 |
+| 最終更新 | 2026-05-02 |
+| 管理者 | 男座員也（Kazuya Oza） |
 
 ---
 
-## 🗂️ ディレクトリ構造
+## カテゴリ別サマリー
+
+| カテゴリ | ファイル数 |
+|---|---|
+| Documentation | 9 |
+| Code | 7 |
+| Asset | 2 |
+| Config | 3 |
+
+---
+
+## ディレクトリ構成
 
 ```
-AI-Transformation-Architect/
-├── ai_architect_qa_instructions.md ← Q&A指示書
-├── create_qa_document.js           ← 生成スクリプト（PatternA）
-├── create_qa_document_patternB.js  ← 生成スクリプト（PatternB）
-├── qa_comparison.js                ← パターン比較
-├── qa_data.js                      ← Q&Aデータ（PatternA）
-├── qa_data_patternB.js             ← Q&Aデータ（PatternB）
-├── qa_data_personaB.js             ← Q&Aデータ（PersonaB）
-├── AI_Architect_QA_Guide.docx      ← 生成済みWord（PatternA）
-├── AI_Architect_QA_PatternB.docx   ← 生成済みWord（PatternB）
-└── package.json
+.
+├── knowledge-base/
+│   ├── 2026-02-18_ai-transformation-architect-progress.md
+│   ├── 2026-03-08_persona-b-qa-completion.md
+│   └── 2026-03-08_persona-c-qa-completion.md
+├── .gitignore
+├── AI_Architect_QA_Guide.docx
+├── ai_architect_qa_instructions.md
+├── AI_Architect_QA_PatternB.docx
+├── CLAUDE.md
+├── create_qa_document_patternB.js
+├── create_qa_document.js
+├── FILE_INDEX.md
+├── package-lock.json
+├── package.json
+├── qa_comparison.js
+├── qa_data_patternB.js
+├── qa_data_personaB.js
+├── qa_data_personaC.js
+├── qa_data.js
+├── README.md
+├── tasks.md
+└── Timeout_Prevention.md
 ```
 
 ---
 
-## 📑 全ファイル一覧
+## ファイル詳細
 
-| パス | 種別 | 説明 |
+### Documentation (9件)
+
+| ファイル | サイズ | 説明 |
 |---|---|---|
-| `ai_architect_qa_instructions.md` | ドキュメント | Q&A作成指示・ガイドライン |
-| `create_qa_document.js` | JavaScript | Q&AドキュメントWord生成（PatternA） |
-| `create_qa_document_patternB.js` | JavaScript | Q&AドキュメントWord生成（PatternB） |
-| `qa_comparison.js` | JavaScript | パターン間比較スクリプト |
-| `qa_data.js` | JavaScript | Q&Aデータ定義（PatternA） |
-| `qa_data_patternB.js` | JavaScript | Q&Aデータ定義（PatternB） |
-| `qa_data_personaB.js` | JavaScript | Q&Aデータ定義（PersonaB） |
-| `AI_Architect_QA_Guide.docx` | 資料 | 生成済みQ&AガイドWord（PatternA） |
-| `AI_Architect_QA_PatternB.docx` | 資料 | 生成済みQ&AガイドWord（PatternB） |
-| `package.json` | 設定 | Node.js依存関係 |
+| `ai_architect_qa_instructions.md` | 15.1 KB | Markdown ドキュメント |
+| `CLAUDE.md` | 1.3 KB | Claude Code プロジェクト設定・命名ルール |
+| `FILE_INDEX.md` | 2.7 KB | （このファイル）全ファイルインデックス |
+| `knowledge-base/2026-02-18_ai-transformation-architect-progress.md` | 6.9 KB | Markdown ドキュメント |
+| `knowledge-base/2026-03-08_persona-b-qa-completion.md` | 6.3 KB | Markdown ドキュメント |
+| `knowledge-base/2026-03-08_persona-c-qa-completion.md` | 5.0 KB | Markdown ドキュメント |
+| `README.md` | 2.2 KB | リポジトリ概要・セットアップ手順 |
+| `tasks.md` | 1.2 KB | タスク管理・セッション履歴 |
+| `Timeout_Prevention.md` | 4.9 KB | タイムアウト対策ガイド |
+
+### Code (7件)
+
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `create_qa_document_patternB.js` | 8.2 KB | JavaScript モジュール |
+| `create_qa_document.js` | 14.2 KB | JavaScript モジュール |
+| `qa_comparison.js` | 10.0 KB | JavaScript モジュール |
+| `qa_data_patternB.js` | 34.8 KB | JavaScript モジュール |
+| `qa_data_personaB.js` | 46.6 KB | JavaScript モジュール |
+| `qa_data_personaC.js` | 94.1 KB | JavaScript モジュール |
+| `qa_data.js` | 78.9 KB | JavaScript モジュール |
+
+### Asset (2件)
+
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `AI_Architect_QA_Guide.docx` | 58.9 KB | Word ドキュメント |
+| `AI_Architect_QA_PatternB.docx` | 23.9 KB | Word ドキュメント |
+
+### Config (3件)
+
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `.gitignore` | 14 B | Git 除外設定 |
+| `package-lock.json` | 7.7 KB | npm ロックファイル（自動生成） |
+| `package.json` | 49 B | npm パッケージ設定 |
 
 ---
 
-## 🔖 ファイル更新ルール
-
-1. 新ファイル追加時: 該当セクションに1行追加
-2. ファイル削除・移動時: 該当行を削除または更新
-3. 更新後: `git add FILE_INDEX.md && git commit -m "docs: FILE_INDEX.md更新"`
+_自動生成: 2026-05-02 | 管理者: 男座員也（Kazuya Oza）_
